@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: magenta;
+  --default-padding: 10%;
+  --secondary-color: yellow;
+}
+
+section {
+  background-color: #212121;
+  width: 100%;
+  height: auto;
+}
+
+.parent-container {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 30px;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  /* flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+}
+
+.child-container {
+  --primary-color: magenta;
+  border: 1px solid #fff;
+  background-color: var(--primary-color);
+  width: 400px;
+}
+
+.parent-container .child-container img {
+  width: 100%;
+}
+
+.text-content {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.text-content h2,
+p {
+  color: #fff;
+  text-align: left;
+}
+
+.text-content .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text-content .buttons button {
+  padding: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+
+  letter-spacing: 1px;
+}
+
+.buttons .btn1 {
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+.buttons .btn2 {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.circle-img {
+  width: 100px;
+  position: relative;
+}
+
+.circle-img img {
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+.another {
+  background-color: var(--primary-color);
+  height: 200px;
+}
+
+@media only screen and(max-width: 600px) {
+  .sec {
+    width: 100%;
+    height: 1000px;
+  }
+}
+
+@media only screen and(min-width: 600px) and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and(min-width: 992px) {
+}
+
+@media only screen and(min-width: 1200px) {
+}
+
+@media only screen and(min-width: 1400px) {
+}
